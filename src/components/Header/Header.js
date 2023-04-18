@@ -16,11 +16,11 @@ const Header = () => {
               <h2 className="text-5xl font-extrabold font-sans">
                 Hi, I'm <span className="text-darkpink">Tasmim</span>
               </h2>
-              <p className="my-5">React Developer from Bangladesh</p>
+              <p className="my-5">MERN Stack Developer from Bangladesh</p>
               <div className="pt-10">
                 <div className="flex">
                   <HiOutlineDocument className="text-darkpink w-7 h-7 " />
-                  <p className="pl-2"> Frontend Developer with React</p>
+                  <p className="pl-2"> MERN Stack Developer</p>
                 </div>
                 <div className="flex py-3">
                   <HiOutlineMail className="text-darkpink w-7 h-7 " />
