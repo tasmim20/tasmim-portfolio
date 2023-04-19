@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="uppercase navbar fixed z-20 bg-blackdeep lg:text-grayLight sm:text-black font-sans font-sm " style={{height:93}}>
+      <div
+        className="uppercase navbar fixed z-20 bg-blackdeep lg:text-grayLight sm:text-black font-sans font-sm "
+        style={{ height: 93 }}
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,10 +48,13 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="avatar">
-  <div className="w-16 rounded-full">
-    <img className="bg-red" src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-  </div>
-</div>
+            <div className="w-16 rounded-full">
+              <img
+                className="bg-redlight"
+                src="/images/stock/photo-1534528741775-53994a69daeb.jpg"
+              />
+            </div>
+          </div>
           <a className="btn btn-ghost normal-case text-xl">Tasmim</a>
         </div>
         <div className="navbar-end hidden lg:flex">

@@ -28,7 +28,6 @@ const AboutMe = () => {
               Mahbub).
             </p>
             <p>
-              
               Please take a look at my portfolio and feel free to get in touch
               if you have any query or would like to work together.
             </p>

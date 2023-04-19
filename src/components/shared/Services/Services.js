@@ -3,9 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <div className="text-grayLight">
-      <div className="text-center s">
+      <div className="text-center ">
         <h2 className="font-bold text-5xl">Services</h2>
-        <p className="text-xl text-darkpink my-3">What I Offer</p>
+        <p className="text-xl text-darkpink mt-3 mb-5">What I Offer</p>
       </div>
       <div>
         <div className="card card-side bg-blackdeep shadow-2xl  rounded-lg">
