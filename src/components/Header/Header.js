@@ -11,7 +11,7 @@ const Header = () => {
     <div>
       <section className=" text-white font-sans">
         <div className="container grid  mx-auto  lg:grid-cols-2 xl:grid-cols-5">
-          <div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:bg-gray-900">
+          <div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 ">
             <div className="shadow-2xl rounded-lg py-10 px-5 font-sans">
               <h2 className="text-5xl font-extrabold font-sans">
                 Hi, I'm <span className="text-darkpink">Tasmim</span>

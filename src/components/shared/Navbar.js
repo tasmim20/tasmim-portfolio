@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="uppercase navbar fixed z-20 bg-blackdeep lg:text-gray sm:text-black font-sans font-sm " style={{height:93}}>
+      <div className="uppercase navbar fixed z-20 bg-blackdeep lg:text-grayLight sm:text-black font-sans font-sm " style={{height:93}}>
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

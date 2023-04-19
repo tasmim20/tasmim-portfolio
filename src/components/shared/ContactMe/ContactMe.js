@@ -4,23 +4,23 @@ const ContactMe = () => {
   return (
     <div>
       <div
-        className="hero text-white "
-        style={{ backgroundImage: `url(${img})`, height: 600, opacity: 2 }}
+        className="hero text-white py-20 "
+        style={{ backgroundImage: `url(${img})`}}
       >
         <div className=" lg:flex-row-reverse">
           <div className="text-center  w-full">
-            <h1 className="text-4xl   font-bold pb-10">Contact Me</h1>
+            <h1 className="text-4xl text-grayLight  font-bold pb-10">Contact Me</h1>
           </div>
-          <div className=" ">
+          <div className=" max-w-4xl p-6 mx-auto space-y-6 sm:space-y-12">
             <div className=" text-white">
               <form>
                 
-             <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 pb-5 text-white">
+             <div className="grid lg:grid-cols-3 grid-cols-1 gap-3 pb-5 text-white">
              <input
                     type="text"
                     placeholder=" Your Name"
                     name="user_name"
-                    className="input input-ghost sm:max-w-full bg-transparent rounded-none border-gray focus:bg-lightpink focus:text-white "
+                    className="input input-ghost sm:max-w-full bg-transparent rounded-none  border-gray-500 focus:bg-lightpink focus:text-white w-full"
                   />
                 
                 
@@ -28,7 +28,7 @@ const ContactMe = () => {
                     type="text"
                     placeholder=" Your Email"
                     name="user_email"
-                    className="input input-ghost bg-transparent w-full rounded-none border border-gray focus:bg-lightpink focus:text-white"
+                    className="input input-ghost bg-transparent w-full rounded-none border border-gray-500 focus:bg-lightpink focus:text-white w-full  "
                   />
                 
                 
@@ -36,14 +36,14 @@ const ContactMe = () => {
                     type="number"
                     placeholder=" Your Phone"
                     name="user_phone"
-                    className="input input-ghost bg-transparent w-full rounded-none border-gray focus:bg-lightpink focus:text-white"
+                    className="input input-ghost bg-transparent w-full rounded-none border-gray-500 focus:bg-lightpink focus:text-white w-full "
                   />
              </div>
                
                 
                   <textarea
                     name="message"
-                    className="textarea rounded-none textarea-ghost bg-transparent focus:bg-lightpink w-full focus:text-white border-gray"
+                    className="textarea rounded-none textarea-ghost bg-transparent focus:bg-lightpink   focus:text-white border-gray-500 w-full h-40"
                     placeholder="Your Message"
                   ></textarea>
                 

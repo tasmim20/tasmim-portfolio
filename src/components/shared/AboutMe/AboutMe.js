@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="my-16">
-      <div className="hero  text-white rounded-lg  ">
+      <div className="hero  text-grayLight rounded-lg  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif"
@@ -11,7 +11,7 @@ const AboutMe = () => {
             className="rounded-lg shadow-2xl bg-black w-full"
           />
           <div className="p-3">
-            <h1 className="text-5xl font-bold mb-4">About Me</h1>
+            <h1 className="text-5xl font-bold mb-4 text-grayLight">About Me</h1>
             <p className="">
               Hi there.. Myself Tasmim Rahman a Web Developer. I specialize in
               both front-end and back-end web development. I'm proficient in
