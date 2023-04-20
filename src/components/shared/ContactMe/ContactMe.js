@@ -3,7 +3,7 @@ import img from "../../../assets/5.jpg";
 const ContactMe = () => {
   return (
     <div>
-      <div
+      <div id="contactMe"
         className="hero text-white py-20 "
         style={{ backgroundImage: `url(${img})` }}
       >

@@ -25,11 +25,11 @@ const Tools = () => {
           data-aos-duration="1000"
           className="grid lg:grid-cols-5 grid-cols-2 gap-10"
         >
-          <SiVisualstudiocode className="text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
-          <SiFirebase className="text-grayLight hover:bg-lightpink hover:text-white font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border   border-reddark" />
-          <SiNetlify className="text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
-          <SiGithub className="text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
-          <SiVercel className="text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
+          <SiVisualstudiocode className="text-grayLight transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white  font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
+          <SiFirebase className="text-grayLight transition duration-700 hover:scale-110 hover:bg-lightpink  hover:text-white font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border   border-reddark" />
+          <SiNetlify className="text-grayLight transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white  font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
+          <SiGithub className="text-grayLight transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white  font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
+          <SiVercel className="text-grayLight transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white   font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
         </div>
       </div>
     </div>

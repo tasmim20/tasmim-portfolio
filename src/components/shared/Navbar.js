@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-scroll'
+import { HashLink as Link} from "react-router-hash-link";
+
 
 const Navbar = () => {
   return (
@@ -30,21 +31,24 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              {/* <li>
-                <Link className="">Home</Link>
-              </li>
-              <li>
-                <Link className="">About Me</Link>
-              </li>
-              <li>
-                <Link className="">Education</Link>
-              </li>
-              <li>
-                <Link className="">Resume</Link>
-              </li>
-              <li>
-                <Link className="">Contact</Link>
-              </li> */}
+               <li>
+              <Link smooth to='#'   className="">Home</Link>
+            </li>
+            <li>
+              <Link smooth to="#aboutMe" className="">About Me</Link>
+            </li>
+            <li>
+              <Link smooth to="#skills"   className="">Skills</Link>
+            </li>
+            <li>
+              <Link smooth to="#services"  className="">Services</Link>
+            </li>
+            <li>
+              <Link smooth to="#projects"   className="">Projects</Link>
+            </li>
+            <li>
+              <Link smooth to="#contactMe"  className="">Contact</Link>
+            </li>
             </ul>
           </div>
           <div className="avatar">
@@ -60,22 +64,22 @@ const Navbar = () => {
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to='/' spy={true} smooth={true} offset={50} duration={500} className="">Home</Link>
+              <Link smooth to='#'   className="">Home</Link>
             </li>
             <li>
-              <Link to='aboutMe' spy={true} smooth={true} offset={50} duration={500} className="">About Me</Link>
+              <Link smooth to="#aboutMe" className="">About Me</Link>
             </li>
             <li>
-              <Link to='skills' spy={true} smooth={true} offset={50} duration={500}  className="">Skills</Link>
+              <Link smooth to="#skills"   className="">Skills</Link>
             </li>
             <li>
-              <Link to='services' spy={true} smooth={true} offset={50} duration={500}  className="">Services</Link>
+              <Link smooth to="#services"  className="">Services</Link>
             </li>
             <li>
-              <Link to='projects' spy={true} smooth={true} offset={50} duration={500}  className="">Projects</Link>
+              <Link smooth to="#projects"   className="">Projects</Link>
             </li>
             <li>
-              <Link to='contactMe' spy={true} smooth={true} offset={50} duration={500}  className="">Contact</Link>
+              <Link smooth to="#contactMe"  className="">Contact</Link>
             </li>
           </ul>
         </div>

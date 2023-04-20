@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="my-16">
+    <div className="my-16" id="aboutMe">
       <div className="hero  text-grayLight rounded-lg  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img  data-aos="fade-left"
