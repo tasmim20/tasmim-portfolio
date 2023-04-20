@@ -9,10 +9,10 @@ import {
 const Header = () => {
   return (
     <div>
-      <section className=" text-white font-sans">
+      <section className=" text-white font-sans mt-20">
         <div className="container grid  mx-auto  lg:grid-cols-2 xl:grid-cols-5">
           <div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 ">
-            <div className="shadow-2xl rounded-lg py-10 px-5 font-sans">
+            <div className="shadow-2xl shadow-gray-900 rounded-lg py-10 px-5 font-sans">
               <h2 className="text-5xl font-extrabold font-sans">
                 Hi, I'm <span className="text-darkpink">Tasmim</span>
               </h2>
@@ -32,7 +32,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="shadow-2xl rounded-lg py-14 px-5 font-sans">
+            <div className="shadow-2xl shadow-gray-900 rounded-lg py-14 px-5 font-sans">
               <p className="py-5">Download My Resume:</p>
               <button className="btn btn-outline border-sm mr-5 shadow-2xl sm:mb-5 lg:mb-0  text-darkpink rounded-none bg-blackdeep">
                 Download Resume
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
           </div>
           <img
-            className="object-cover shadow-2xl  w-full rounded-lg xl:col-span-3  p-10"
+            className="object-cover shadow-2xl shadow-gray-900 w-full rounded-lg xl:col-span-3  p-10"
             src="https://inbio-react.netlify.app/static/3824f31a4f42d1cce321240d0503e667/d0f18/banner-02.webp"
             alt=""
           />

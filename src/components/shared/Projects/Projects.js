@@ -22,13 +22,13 @@ const Projects = () => {
         data-aos-duration="1000"
         className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10"
       >
-        <div className="transition duration-700 hover:scale-105  hover:text-darkpink  card rounded-sm shadow-2xl shadow-red-800/40 ">
+        <div className="transition duration-700 hover:scale-105    card rounded-sm shadow-2xl shadow-red-800/40 ">
           <figure>
-            <img className=" h-52 p-3 " src={harmic} alt="Shoes" />
+            <img className=" " src={harmic} alt="Shoes" />
           </figure>
-          <div className="card-body hover:text-darkpink -mt-5">
+          <div className="card-body  -mt-5">
             <h2 className="card-title ">HARMIC</h2>
-            <p>Harmic is a e-commerce website of different types of fruits and vegtables.Here user can add blog and manage their blog</p>
+            <p>Harmic is a e-commerce website of different types of fruits and vegatables.Here user can add blog and manage their blog</p>
             <div className="card-actions justify-between mt-2 -mb-2">
               <div className="flex">
                 <a
@@ -60,9 +60,9 @@ const Projects = () => {
           </div>
         </div>
         <div>
-          <div className="transition duration-700 hover:scale-105  hover:text-darkpink card rounded-sm card-shadow shadow-2xl  shadow-red-800/40">
+          <div className="transition duration-700 hover:scale-105   card rounded-sm card-shadow shadow-2xl  shadow-red-800/40">
             <figure>
-              <img className="h-52 p-3 " src={codeplanner} alt="Shoes" />
+              <img className="" src={codeplanner} alt="Shoes" />
             </figure>
             <div className="card-body -mt-5">
               <h2 className="card-title ">SELLCELL</h2>
@@ -100,13 +100,13 @@ const Projects = () => {
           </div>
         </div>
         <div>
-          <div className="transition duration-700 hover:scale-105  hover:text-darkpink card rounded-sm shadow-2xl  card-shadow shadow-red-800/40">
+          <div className="transition duration-700 hover:scale-105   card rounded-sm shadow-2xl  card-shadow shadow-red-800/40">
             <figure>
-              <img className="h-52 p-6 " src={sellcell} alt="Shoes" />
+              <img className=" " src={sellcell} alt="Shoes" />
             </figure>
             <div className="card-body -mt-5">
               <h2 className="card-title ">CODE-PLANNER</h2>
-              <p>Code-planner is a online learning platform. Here many types of courses available of programming world.Users must be registered</p>
+              <p>Code-planner is a online learning platform. Here many types of courses available of programming world</p>
 
               <div className="card-actions justify-between mt-2 -mb-2">
                 <div className="flex">

@@ -21,10 +21,9 @@ const Home = () => {
       <div className="max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
         <Services></Services>
       </div>
-      <div className="max-w-8xl p-6 mx-auto space-y-6 sm:space-y-12">
+      <div className="max-w-7xl p-6 mx-auto space-y-6 sm:space-y-12">
         <Projects></Projects>
       </div>
-
       <div className="">
         <ContactMe></ContactMe>
       </div>

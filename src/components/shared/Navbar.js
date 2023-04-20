@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className="uppercase navbar fixed z-20 bg-blackdeep lg:text-grayLight sm:text-black font-sans font-sm "
+        className="uppercase navbar fixed z-20 bg-blackdeep text-grayLight sm:text-black font-sans font-sm "
         style={{ height: 93 }}
       >
         <div className="navbar-start">
@@ -29,7 +29,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-blackdeep text-grayLight rounded-box w-52"
             >
                <li>
               <Link smooth to='#'   className="">Home</Link>
@@ -59,10 +59,10 @@ const Navbar = () => {
               />
             </div>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Tasmim</a>
+          <a className="btn btn-ghost normal-case text-xl text-grayLight">Tasmim</a>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-grayLight" >
             <li>
               <Link smooth to='#'   className="">Home</Link>
             </li>
