@@ -5,12 +5,16 @@ const AboutMe = () => {
     <div className="my-16">
       <div className="hero  text-grayLight rounded-lg  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
+          <img  data-aos="fade-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000" 
             src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif"
             style={{ height: 400, width: 600 }}
             className="rounded-lg shadow-2xl bg-black w-full"
           />
-          <div className="p-3">
+          <div  data-aos="fade-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"  className="p-3">
             <h1 className="text-5xl font-bold mb-4 text-grayLight">About Me</h1>
             <p className="">
               Hi there.. Myself Tasmim Rahman a Web Developer. I specialize in
@@ -32,7 +36,7 @@ const AboutMe = () => {
               if you have any query or would like to work together.
             </p>
 
-            <button className="btn btn-outline border-sm shadow-2xl rounded-none text-darkpink mt-2">
+            <button  className="btn btn-outline border-sm shadow-2xl rounded-none text-darkpink mt-2">
               Hire me
             </button>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   return (
@@ -30,7 +30,7 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+              {/* <li>
                 <Link className="">Home</Link>
               </li>
               <li>
@@ -44,7 +44,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link className="">Contact</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="avatar">
@@ -60,25 +60,26 @@ const Navbar = () => {
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link className="">Home</Link>
+              <Link to='/' spy={true} smooth={true} offset={50} duration={500} className="">Home</Link>
             </li>
             <li>
-              <Link className="">About Me</Link>
+              <Link to='aboutMe' spy={true} smooth={true} offset={50} duration={500} className="">About Me</Link>
             </li>
             <li>
-              <Link className="">Education</Link>
+              <Link to='skills' spy={true} smooth={true} offset={50} duration={500}  className="">Skills</Link>
             </li>
             <li>
-              <Link className="">Resume</Link>
+              <Link to='services' spy={true} smooth={true} offset={50} duration={500}  className="">Services</Link>
             </li>
             <li>
-              <Link className="">Contact</Link>
+              <Link to='projects' spy={true} smooth={true} offset={50} duration={500}  className="">Projects</Link>
+            </li>
+            <li>
+              <Link to='contactMe' spy={true} smooth={true} offset={50} duration={500}  className="">Contact</Link>
             </li>
           </ul>
         </div>
-        {/* <div className="navbar-end">
-    <a className="btn">Get started</a>
-  </div> */}
+    
       </div>
     </div>
   );

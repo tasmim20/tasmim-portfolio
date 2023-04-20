@@ -7,11 +7,21 @@ import { BiLinkExternal } from "react-icons/bi";
 const Projects = () => {
   return (
     <div className="text-grayLight grid justify-center align-center my-10 mb-20">
-      <div className="text-center mb-10 ">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        className="text-center mb-10 "
+      >
         <h2 className="text-5xl font-bold">Projects</h2>
         <p className="text-darkpink mt-3">My Recent Works</p>
       </div>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10"
+      >
         <div className="card rounded-sm shadow-2xl shadow-red-800/40">
           <figure>
             <img className="h-52 p-6 " src={harmic} alt="Shoes" />

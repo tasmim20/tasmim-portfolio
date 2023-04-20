@@ -6,12 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from 'react-router-dom';
 import router from './Routes/Routes';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+   
     <RouterProvider router={router}>
-    <App />
-    </RouterProvider>
+      
+      <App />
+      </RouterProvider>
+   
+  
   </React.StrictMode>
 );
 
