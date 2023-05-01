@@ -8,7 +8,7 @@ import Projects from "../components/shared/Projects/Projects";
 import ContactMe from "../components/shared/ContactMe/ContactMe";
 
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
 {
     path: "/",
     element: <Main></Main>,

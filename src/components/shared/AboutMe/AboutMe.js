@@ -24,9 +24,7 @@ const AboutMe = () => {
             </h1>
             <ul className="list-disc">
               <li className="">
-                Hi there🌹  .. Myself Tasmim Rahman, Who loves💓 developing. Web Developer using MERN Stack
-                Technology. I specialize in both front-end and back-end web
-                development.
+                Hi there🌹  .. Myself Tasmim Rahman, Who loves💓 developing. I am a MERN Stack Developer.
               </li>
               <li className="my-3">
                 I am doing my bachelors in Technology specialization in ECE👩‍💻 from

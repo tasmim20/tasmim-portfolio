@@ -1,6 +1,29 @@
+import { useRef } from "react";
 import img from "../../../assets/5.jpg";
+import { toast } from "react-hot-toast";
+import emailjs from '@emailjs/browser';
 
 const ContactMe = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_tgpjuvd', 'template_lp0nrbb', form.current, 'uboDGEfEJOHfML08c')
+      .then((result) => {
+          console.log(result.text);
+         
+          toast.success('Message sent successfully')
+      }, (error) => {
+          console.log(error.text);
+      });
+      useRef.current.text = "";
+  };
+
+
+
+
   return (
     <div>
       <div id="contactMe"
@@ -20,7 +43,7 @@ const ContactMe = () => {
           </div>
           <div className=" max-w-4xl p-6 mx-auto space-y-6 sm:space-y-12">
             <div className=" text-white">
-              <form
+              <form ref={form} onSubmit={sendEmail}
                 data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1000"
