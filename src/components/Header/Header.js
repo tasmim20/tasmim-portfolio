@@ -6,6 +6,9 @@ import {
   HiOutlineMail,
 } from "react-icons/hi";
 import girl from "../../assets/girlicon2.png";
+import resume from "../../assets/TAS-Resume.pdf";
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
@@ -83,12 +86,12 @@ const Header = () => {
               </div>
               <div className="shadow-2xl shadow-gray-900 rounded-lg p-10 mt-8 font-sans">
                 <p className="py-5">Download My Resume:</p>
-                <button className="btn btn-outline border-sm mr-5 shadow-2xl sm:mb-5 lg:mb-0  text-darkpink rounded-none bg-blackdeep">
+              <a href={resume} download='Tasmim Rahman'>  <button className="btn btn-outline border-sm mr-5 shadow-2xl sm:mb-5 lg:mb-0  text-darkpink rounded-none bg-blackdeep" >
                   Download Resume
-                </button>
-                <button className="btn btn-outline border-sm shadow-2xl rounded-none text-darkpink ">
+                </button></a>
+               <Link  smooth to="#contactMe" > <button className="btn btn-outline border-sm shadow-2xl rounded-none text-darkpink ">
                   Contact me
-                </button>
+                </button></Link>
               </div>
             </div>
           </div>
