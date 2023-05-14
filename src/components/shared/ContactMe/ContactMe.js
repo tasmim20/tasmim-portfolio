@@ -3,6 +3,7 @@ import img from "../../../assets/5.jpg";
 import { toast } from "react-hot-toast";
 import emailjs from '@emailjs/browser';
 
+
 const ContactMe = () => {
 
   const form = useRef();
@@ -10,15 +11,16 @@ const ContactMe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_tgpjuvd', 'template_lp0nrbb', form.current, 'uboDGEfEJOHfML08c')
+    emailjs.sendForm('service_8r8psfr','template_wcntflh' , form.current, 'uboDGEfEJOHfML08c')
       .then((result) => {
           console.log(result.text);
+          
          
           toast.success('Message sent successfully')
       }, (error) => {
           console.log(error.text);
       });
-      useRef.current.text = "";
+     
   };
 
 

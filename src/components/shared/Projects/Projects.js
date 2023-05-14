@@ -62,7 +62,7 @@ const Projects = () => {
         <div>
           <div className="transition duration-700 hover:scale-105   card rounded-sm card-shadow shadow-2xl  shadow-red-800/40">
             <figure>
-              <img className="" src={codeplanner} alt="Shoes" />
+              <img className="" src={sellcell} alt="Shoes" />
             </figure>
             <div className="card-body -mt-5">
               <h2 className="card-title ">SELLCELL</h2>
@@ -102,7 +102,7 @@ const Projects = () => {
         <div>
           <div className="transition duration-700 hover:scale-105   card rounded-sm shadow-2xl  card-shadow shadow-red-800/40">
             <figure>
-              <img className=" " src={sellcell} alt="Shoes" />
+              <img className=" " src={codeplanner} alt="Shoes" />
             </figure>
             <div className="card-body -mt-5">
               <h2 className="card-title ">CODE-PLANNER</h2>

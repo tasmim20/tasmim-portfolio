@@ -23,7 +23,7 @@ const Skills = () => {
         data-aos="fade-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
-        className="grid lg:grid-cols-5 grid-cols-2 gap-10"
+        className="grid lg:grid-cols-5  md:grid-cols-3 grid-cols-2 gap-10"
       >
         <DiJavascript1 className=" transition duration-700 hover:scale-110 text-grayLight hover:bg-lightpink hover:text-white font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border   border-reddark" />
         <DiReact className= "transition duration-700 hover:scale-110 text-grayLight hover:bg-lightpink hover:text-white font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
