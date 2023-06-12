@@ -15,6 +15,7 @@ const ContactMe = () => {
       .then((result) => {
           console.log(result.text);
           
+          
          
           toast.success('Message sent successfully')
       }, (error) => {
@@ -78,7 +79,7 @@ const ContactMe = () => {
                   className="textarea rounded-none textarea-ghost bg-transparent focus:bg-lightpink   focus:text-white border-gray-500 w-full h-40"
                   placeholder="Your Message"
                 ></textarea>
-
+                       {/* <h2>adajlfdalfd</h2> */}
                 <div
                   data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
