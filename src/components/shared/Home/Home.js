@@ -8,8 +8,8 @@ import Skills from "../Skills/Skills";
 
 const Home = () => {
   return (
-    <div className=" max-w-8xl p-6 mx-auto space-y-6 sm:space-y-12 bg-blackdeep pt-15 pb-10">
-      <div className="max-w-8xl p-6 mx-auto space-y-6 sm:space-y-12">
+    <div className=" max-w-8xl  mx-auto space-y-6 sm:space-y-12 bg-blackdeep pt-15 pb-10">
+      <div className="max-w-8xl  mx-auto space-y-6 sm:space-y-12">
         <Header></Header>
       </div>
       <div className="max-w-8xl p-6 mx-auto space-y-6 sm:space-y-12">

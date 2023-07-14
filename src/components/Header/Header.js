@@ -12,15 +12,16 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
+    <div className="pt-12">
 
-      <div className="mt-20">
+      <div className="-mt-16 md:-mt-12">
         <div className="hero  text-grayLight rounded-lg  ">
-          <div className="hero-content flex-col lg:flex-row-reverse">
+          <div className="flex flex-col lg:flex-row-reverse">
             <img
               src={girl}
               style={{ width: 620, height: 560 }}
-              className="rounded-lg shadow-2xl lg:ml-28 w-full"
+              className="rounded-lg shadow-xl lg:ml-28 w-full"
+              alt=""
             />
             <div>
               <div className="shadow-2xl shadow-gray-900 rounded-lg p-10 font-sans">

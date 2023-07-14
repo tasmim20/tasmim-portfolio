@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className="hero  text-grayLight rounded-lg  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
             src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif"
@@ -14,10 +14,11 @@ const AboutMe = () => {
             className="rounded-lg shadow-2xl bg-black w-full"
           />
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
             className="p-3"
+           
           >
             <h1 className="text-5xl font-bold mb-6 text-grayLight">
               Let me <span className="text-darkpink">introduce😍 </span> myself

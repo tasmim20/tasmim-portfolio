@@ -1,11 +1,10 @@
 import React from "react";
-import { HashLink as Link} from "react-router-hash-link";
-import girl from '../../assets/girlicon2.png';
-
+import { HashLink as Link } from "react-router-hash-link";
+import girl from "../../assets/girlicon2.png";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="h-28  bg-blackdeep">
       <div
         className="uppercase navbar fixed z-20 bg-blackdeep text-grayLight sm:text-black font-sans font-sm "
         style={{ height: 93 }}
@@ -32,59 +31,81 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-blackdeep text-grayLight rounded-box w-52"
             >
-               <li>
-              <Link smooth to='#'   className="">Home</Link>
-            </li>
-            <li>
-              <Link smooth to="#aboutMe" className="">About Me</Link>
-            </li>
-            <li>
-              <Link smooth to="#skills"   className="">Skills</Link>
-            </li>
-            <li>
-              <Link smooth to="#services"  className="">Services</Link>
-            </li>
-            <li>
-              <Link smooth to="#projects"   className="">Projects</Link>
-            </li>
-            <li>
-              <Link smooth to="#contactMe"  className="">Contact</Link>
-            </li>
+              <li>
+                <Link smooth to="#" className="">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link smooth to="#aboutMe" className="">
+                  About Me
+                </Link>
+              </li>
+              <li>
+                <Link smooth to="#skills" className="">
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link smooth to="#services" className="">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link smooth to="#projects" className="">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link smooth to="#contactMe" className="">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="avatar">
             <div className="w-16 rounded-full">
-              <img
-                className="bg-redlight"
-                src={girl}
-              />
+              <img className="bg-redlight" src={girl} />
             </div>
           </div>
-          <a className="btn btn-ghost normal-case text-xl text-grayLight">Tasmim Rahman</a>
+          <a className="btn btn-ghost normal-case text-xl text-grayLight">
+            Tasmim Rahman
+          </a>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-grayLight" >
+          <ul className="menu menu-horizontal px-1 text-grayLight">
             <li>
-              <Link smooth to='#'   className="">Home</Link>
+              <Link smooth to="#" className="">
+                Home
+              </Link>
             </li>
             <li>
-              <Link smooth to="#aboutMe" className="">About Me</Link>
+              <Link smooth to="#aboutMe" className="">
+                About Me
+              </Link>
             </li>
             <li>
-              <Link smooth to="#skills"   className="">Skills</Link>
+              <Link smooth to="#skills" className="">
+                Skills
+              </Link>
             </li>
             <li>
-              <Link smooth to="#services"  className="">Services</Link>
+              <Link smooth to="#services" className="">
+                Services
+              </Link>
             </li>
             <li>
-              <Link smooth to="#projects"   className="">Projects</Link>
+              <Link smooth to="#projects" className="">
+                Projects
+              </Link>
             </li>
             <li>
-              <Link smooth to="#contactMe"  className="">Contact</Link>
+              <Link smooth to="#contactMe" className="">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
-    
       </div>
     </div>
   );
