@@ -1,35 +1,37 @@
 import { useRef } from "react";
 import img from "../../../assets/5.jpg";
 import { toast } from "react-hot-toast";
-import emailjs from '@emailjs/browser';
-
+import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_8r8psfr','template_wcntflh' , form.current, 'uboDGEfEJOHfML08c')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_8r8psfr",
+        "template_wcntflh",
+        form.current,
+        "uboDGEfEJOHfML08c"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-          
-          
-         
-          toast.success('Message sent successfully')
-      }, (error) => {
+
+          toast.success("Message sent successfully");
+        },
+        (error) => {
           console.log(error.text);
-      });
-     
+        }
+      );
   };
-
-
-
 
   return (
     <div>
-      <div id="contactMe"
+      <div
+        id="contactMe"
         className="hero text-white py-20 "
         style={{ backgroundImage: `url(${img})` }}
       >
@@ -46,7 +48,9 @@ const ContactMe = () => {
           </div>
           <div className=" max-w-4xl p-6 mx-auto space-y-6 sm:space-y-12">
             <div className=" text-white">
-              <form ref={form} onSubmit={sendEmail}
+              <form
+                ref={form}
+                onSubmit={sendEmail}
                 data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1000"
@@ -79,7 +83,7 @@ const ContactMe = () => {
                   className="textarea rounded-none textarea-ghost bg-transparent focus:bg-lightpink   focus:text-white border-gray-500 w-full h-40"
                   placeholder="Your Message"
                 ></textarea>
-                       {/* <h2>adajlfdalfd</h2> */}
+                {/* <h2>adajlfdalfd</h2> */}
                 <div
                   data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"

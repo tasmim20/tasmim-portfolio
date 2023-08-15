@@ -3,7 +3,8 @@ import React from "react";
 const Services = () => {
   return (
     <div className="text-grayLight">
-      <div id="services"
+      <div
+        id="services"
         data-aos="fade-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
