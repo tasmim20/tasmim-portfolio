@@ -25,9 +25,9 @@ const Header = () => {
             />
             <div>
               <div className="shadow-2xl shadow-gray-900 rounded-lg p-10 font-sans">
-                {/* <h2 className="text-5xl font-extrabold font-sans">
+                <h2 className="text-5xl font-extrabold font-sans">
                   Hi, I'm <span className="text-darkpink">Tasmim</span>
-                </h2> */}
+                </h2>
                 <p className="my-5">MERN Stack Developer from Bangladesh</p>
                 <div className="pt-10">
                   <div className="flex">
