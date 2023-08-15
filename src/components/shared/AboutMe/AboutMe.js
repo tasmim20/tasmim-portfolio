@@ -12,6 +12,7 @@ const AboutMe = () => {
             src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif"
             style={{ height: 400, width: 600 }}
             className="rounded-lg shadow-2xl bg-black w-full"
+            alt=""
           />
           <div
             data-aos="fade-up"

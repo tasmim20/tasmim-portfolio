@@ -19,9 +19,9 @@ const Footer = () => {
           <a href="https://github.com/tasmim20">
             <FaGithub></FaGithub>
           </a>
-          <a href="">
+          <p>
             <FaFacebookSquare></FaFacebookSquare>
-          </a>
+          </p>
         </div>
       </footer>
     </div>
