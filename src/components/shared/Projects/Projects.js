@@ -1,7 +1,7 @@
 import React from "react";
 import harmic from "../../../assets/harmic2.png";
-import sellcell from "../../../assets/sellss.jpeg";
-import nolan from "../../../assets/nolan.jpeg";
+import chutti from "../../../assets/chutti1.png";
+import nolan from "../../../assets/directRelief.png";
 import { BiLinkExternal } from "react-icons/bi";
 
 const Projects = () => {
@@ -71,18 +71,17 @@ const Projects = () => {
               <img className="" src={nolan} alt="Shoes" />
             </figure>
             <div className="card-body -mt-5">
-              <h2 className="card-title ">Nolan-Script</h2>
+              <h2 className="card-title ">Direct-Relief</h2>
               <p>
-                Nolan-Script is a full stack project using Next js.It is a
-                script writing website. Here firebase authentication system is
-                implemented.
+                Direct relief is a project for donation.Manage application state
+                centrally with redux and data fetching with RTQ Query.
               </p>
               <div className="card-actions justify-between mt-2 -mb-2">
                 <div className="flex">
                   <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://nolan-script.vercel.app/"
+                    href="https://direct-relief-client1.vercel.app/"
                   >
                     Live-link
                   </a>
@@ -91,9 +90,18 @@ const Projects = () => {
                   <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://github.com/tasmim20/Nolan-Script"
+                    href="https://github.com/tasmim20/direct-relief-server"
                   >
-                    Github-link
+                    Back-End
+                  </a>
+                </div>
+                <div className="flex">
+                  <BiLinkExternal className="text-darkpink mt-1 " />
+                  <a
+                    className="no-underline text-darkpink"
+                    href="https://github.com/tasmim20/direct-relief-client"
+                  >
+                    Front-End
                   </a>
                 </div>
               </div>
@@ -103,20 +111,21 @@ const Projects = () => {
         <div>
           <div className="transition duration-700 hover:scale-105   card rounded-sm card-shadow shadow-2xl  shadow-red-800/40">
             <figure>
-              <img className="" src={sellcell} alt="Shoes" />
+              <img className="" src={chutti} alt="Shoes" />
             </figure>
             <div className="card-body -mt-5">
-              <h2 className="card-title ">SELLCELL</h2>
+              <h2 className="card-title ">Chutti </h2>
               <p>
-                Sellcell is website of buying and selling. For buying and
-                selling user must be registered. User can manage their orders.
+                Chutti is website for a online clothing store. Implementing
+                server-side rendering(SSR) for increasing performance and SEO
+                friendly.
               </p>
               <div className="card-actions justify-between mt-2 -mb-2">
                 <div className="flex">
                   <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://sellcell-f5de6.web.app"
+                    href="https://chutti-clothing-store.vercel.app/"
                   >
                     Live-link
                   </a>
@@ -125,7 +134,7 @@ const Projects = () => {
                   <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://github.com/tasmim20/sellcell-client-side"
+                    href="https://github.com/tasmim20/clothing-store-client"
                   >
                     Front-End
                   </a>
@@ -134,7 +143,7 @@ const Projects = () => {
                   <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://github.com/tasmim20/sellcell-server"
+                    href="https://github.com/tasmim20/clothing-store-server"
                   >
                     Back-End
                   </a>
