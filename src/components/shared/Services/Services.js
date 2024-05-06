@@ -65,6 +65,12 @@ const Services = () => {
               appealing and user-friendly interfaces that provide a great user
               experience using React, TailwindCss, Bootstrap, Material UI
             </p>
+            {/* <p>
+              {" "}
+              I made so many website. My main focus is on creating visually
+              appealing and user-friendly interfaces that provide a great user
+              experience using React, TailwindCss, Bootstrap, Material UI
+            </p> */}
             <div className="card-actions justify-end">
               <button className="btn btn-outline border-sm shadow-2xl  rounded-none text-darkpink ">
                 Contact me
