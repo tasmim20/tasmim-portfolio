@@ -32,7 +32,7 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-blackdeep text-grayLight rounded-box w-52"
             >
               <li>
-                <Link smooth to="#" className="">
+                <Link smooth to="/" className="">
                   Home
                 </Link>
               </li>
@@ -75,7 +75,7 @@ const Navbar = () => {
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-grayLight">
             <li>
-              <Link smooth to="#" className="">
+              <Link smooth to="/" className="">
                 Home
               </Link>
             </li>
@@ -102,6 +102,11 @@ const Navbar = () => {
             <li>
               <Link smooth to="#contactMe" className="">
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/dashboard" className="">
+                Dashboard
               </Link>
             </li>
           </ul>
