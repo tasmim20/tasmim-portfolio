@@ -10,6 +10,7 @@ import DashboardLayout from "../Layout/DashboardLayout";
 import CreateProjects from "../Dashboard/CreateProjects";
 import CreateBlogs from "../Dashboard/CreateBlogs";
 import CreateSkills from "../Dashboard/CreateSkills";
+import Blog from "../Blog/Blog";
 
 export const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
       {
         path: "contactMe",
         element: <ContactMe></ContactMe>,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
       },
     ],
   },

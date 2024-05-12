@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer grid justify-between items-center p-4 px-10 bg-blackdeep text-grayLight">
+      <footer className="footer grid justify-between items-center p-4 px-10 h-28 uppercase bg-blackdeep text-grayLight">
         <div className="">
           <p>Developed by Tasmim</p>
         </div>

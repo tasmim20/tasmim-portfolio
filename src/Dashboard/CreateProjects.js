@@ -65,10 +65,10 @@ const CreateProjects = () => {
                 Client-site Repository
               </label>
               <input
-                {...register("client-link")}
+                {...register("clientLink")}
                 type="text"
-                id="client-link"
-                name="client-link"
+                id="clientLink"
+                name="clientLink"
                 className="input input-bordered rounded-md border-gray-500 bg-transparent pr-10 "
                 required
               />
@@ -78,10 +78,10 @@ const CreateProjects = () => {
                 Server-site Repository
               </label>
               <input
-                {...register("server-link")}
+                {...register("serverLink")}
                 type="text"
-                id="server-link"
-                name="server-link"
+                id="serverLink"
+                name="serverLink"
                 className="input input-bordered rounded-md border-gray-500 bg-transparent pr-10 "
                 required
               />
@@ -91,10 +91,10 @@ const CreateProjects = () => {
                 Live-link
               </label>
               <input
-                {...register("live-link")}
+                {...register("liveLink")}
                 type="text"
-                id="live-link"
-                name="live-link"
+                id="liveLink"
+                name="liveLink"
                 className="input input-bordered rounded-md border-gray-500 bg-transparent pr-10 "
                 required
               />

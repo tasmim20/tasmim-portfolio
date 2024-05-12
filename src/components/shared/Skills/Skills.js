@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   DiCss3,
   DiJavascript1,
@@ -7,8 +7,14 @@ import {
   DiReact,
 } from "react-icons/di";
 import Tools from "./Tools/Tools";
+import axios from "axios";
 
 const Skills = () => {
+  const [viewSkills, setViewSkills] = useState([]);
+
+  axios.get("http://localhost:5000/api/skills").then((res) => {
+    setViewSkills(res.data.result);
+  });
   return (
     <div className="grid justify-center" id="skills">
       <h2
@@ -25,12 +31,21 @@ const Skills = () => {
         data-aos-duration="1000"
         className="grid lg:grid-cols-5  md:grid-cols-3 grid-cols-2 gap-10"
       >
-        <DiJavascript1 className=" transition duration-700 hover:scale-110 text-grayLight hover:bg-lightpink hover:text-white font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border   border-reddark" />
+        {viewSkills?.length !== 0 &&
+          viewSkills?.map((row) => (
+            <div>
+              <img
+                className=" transition duration-700 hover:scale-110 text-grayLight hover:bg-lightpink hover:text-white font-semibold h-28 w-36 shadow-2xl shadow-red-800/40 border   border-reddark"
+                src={row.image}
+                alt=""
+              />
+            </div>
+          ))}
+        {/* <DiJavascript1 className=" transition duration-700 hover:scale-110 text-grayLight hover:bg-lightpink hover:text-white font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border   border-reddark" />
         <DiReact className="transition duration-700 hover:scale-110 text-grayLight hover:bg-lightpink hover:text-white font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
         <DiNodejs className="transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
-        {/* <DiNe className="text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" /> */}
         <DiMongodb className="transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
-        <DiCss3 className="transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" />
+        <DiCss3 className="transition duration-700 hover:scale-110 hover:bg-lightpink hover:text-white text-grayLight font-semibold h-28 w-36 p-2 shadow-2xl shadow-red-800/40 border border-reddark" /> */}
       </div>
       <div className="my-10">
         <Tools></Tools>

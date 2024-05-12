@@ -46,11 +46,11 @@ const Navbar = () => {
                   Skills
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link smooth to="#services" className="">
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link smooth to="#projects" className="">
                   Projects
@@ -60,6 +60,16 @@ const Navbar = () => {
                 <Link smooth to="#contactMe" className="">
                   Contact
                 </Link>
+                <li>
+                  <Link smooth to="blog" className="">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/dashboard" className="">
+                    Dashboard
+                  </Link>
+                </li>
               </li>
             </ul>
           </div>
@@ -89,11 +99,11 @@ const Navbar = () => {
                 Skills
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link smooth to="#services" className="">
                 Services
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link smooth to="#projects" className="">
                 Projects
@@ -102,6 +112,11 @@ const Navbar = () => {
             <li>
               <Link smooth to="#contactMe" className="">
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link smooth to="blog" className="">
+                Blog
               </Link>
             </li>
             <li>
