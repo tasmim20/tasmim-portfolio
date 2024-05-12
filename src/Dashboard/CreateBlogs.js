@@ -19,14 +19,16 @@ const CreateBlogs = () => {
     };
     console.log(newBlog);
 
-    axios.post("http://localhost:5000/api/blogs", newBlog).then((res) => {
-      if (res.data.success) {
-        toast.success("Blog created Successfully!");
-        reset();
-      } else {
-        alert(res.data.message);
-      }
-    });
+    axios
+      .post("https://portfolio-server-khaki.vercel.app/api/blogs", newBlog)
+      .then((res) => {
+        if (res.data.success) {
+          toast.success("Blog created Successfully!");
+          reset();
+        } else {
+          alert(res.data.message);
+        }
+      });
   };
   const stripHTMLTags = (html) => {
     return html.replace(/(<([^>]+)>)/gi, "");

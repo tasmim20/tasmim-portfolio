@@ -4,9 +4,11 @@ import React, { useState } from "react";
 const Blog = () => {
   const [viewBlogs, setViewBlogs] = useState([]);
 
-  axios.get("http://localhost:5000/api/blogs").then((res) => {
-    setViewBlogs(res.data.result);
-  });
+  axios
+    .get("https://portfolio-server-khaki.vercel.app/api/blogs")
+    .then((res) => {
+      setViewBlogs(res.data.result);
+    });
   return (
     <div className="bg-blackdeep">
       <div className="max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">

@@ -12,9 +12,11 @@ import axios from "axios";
 const Skills = () => {
   const [viewSkills, setViewSkills] = useState([]);
 
-  axios.get("http://localhost:5000/api/skills").then((res) => {
-    setViewSkills(res.data.result);
-  });
+  axios
+    .get("https://portfolio-server-khaki.vercel.app/api/skills")
+    .then((res) => {
+      setViewSkills(res.data.result);
+    });
   return (
     <div className="grid justify-center" id="skills">
       <h2

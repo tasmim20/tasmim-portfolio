@@ -14,14 +14,19 @@ const CreateProjects = () => {
     };
     console.log(newProject);
 
-    axios.post("http://localhost:5000/api/projects", newProject).then((res) => {
-      if (res.data.success) {
-        toast.success("Project added Successfully!");
-        reset();
-      } else {
-        alert(res.data.message);
-      }
-    });
+    axios
+      .post(
+        "https://portfolio-server-khaki.vercel.app/api/projects",
+        newProject
+      )
+      .then((res) => {
+        if (res.data.success) {
+          toast.success("Project added Successfully!");
+          reset();
+        } else {
+          alert(res.data.message);
+        }
+      });
   };
   return (
     <div>

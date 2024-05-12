@@ -8,9 +8,11 @@ import axios from "axios";
 const Projects = () => {
   const [viewProjects, setViewProjects] = useState([]);
 
-  axios.get("http://localhost:5000/api/projects").then((res) => {
-    setViewProjects(res.data.result);
-  });
+  axios
+    .get("https://portfolio-server-khaki.vercel.app/api/projects")
+    .then((res) => {
+      setViewProjects(res.data.result);
+    });
   return (
     <div
       id="projects"
