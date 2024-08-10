@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import harmic from "../../../assets/harmic2.png";
-import chutti from "../../../assets/chutti1.png";
+import hoco from "../../../assets/HOCO.png";
 import nolan from "../../../assets/directRelief.png";
 import { BiLinkExternal } from "react-icons/bi";
 import axios from "axios";
 
 const Projects = () => {
-  const [viewProjects, setViewProjects] = useState([]);
+  // const [viewProjects, setViewProjects] = useState([]);
 
-  axios
-    .get("https://portfolio-server-khaki.vercel.app/api/projects")
-    .then((res) => {
-      setViewProjects(res.data.result);
-    });
+  // axios
+  //   .get("https://portfolio-server-khaki.vercel.app/api/projects")
+  //   .then((res) => {
+  //     setViewProjects(res.data.result);
+  //   });
   return (
     <div
       id="projects"
@@ -36,19 +36,19 @@ const Projects = () => {
       >
         <div className="transition duration-700 hover:scale-105    card rounded-sm shadow-2xl shadow-red-800/40 ">
           <figure>
-            <img className=" " src={harmic} alt="Shoes" />
+            <img className=" " src={hoco} alt="Shoes" />
           </figure>
           <div className="card-body  -mt-5">
-            <h2 className="card-title ">HARMIC</h2>
+            <h2 className="card-title ">HOCO</h2>
             <p>
-              Harmic is a e-commerce website of different types of fruits and
-              vegatables.Here user can add blog and manage their blog
+              Hoco enhances Home Schooling with advanced SSR for optimal
+              performance and SEO, offering user-centric experience
             </p>
             <div className="card-actions justify-between mt-2 -mb-2">
               <div className="flex">
                 <a
                   className="no-underline text-darkpink"
-                  href="https://harmic-client.firebaseapp.com/"
+                  href="https://hoco-education-client.vercel.app/"
                 >
                   Live-link
                 </a>
@@ -57,7 +57,7 @@ const Projects = () => {
                 <BiLinkExternal className="text-darkpink mt-1 " />
                 <a
                   className="no-underline text-darkpink"
-                  href="https://github.com/tasmim20/harmic-client"
+                  href="https://github.com/tasmim20/hoco-education-client"
                 >
                   Front-End
                 </a>
@@ -66,7 +66,7 @@ const Projects = () => {
                 <BiLinkExternal className="text-darkpink mt-1 " />
                 <a
                   className="no-underline text-darkpink"
-                  href="https://github.com/tasmim20/harmic-server"
+                  href="https://github.com/tasmim20/hoco-education-server"
                 >
                   Back-End
                 </a>
@@ -118,23 +118,21 @@ const Projects = () => {
           </div>
         </div>
         <div>
-          <div className="transition duration-700 hover:scale-105   card rounded-sm card-shadow shadow-2xl  shadow-red-800/40">
+          <div className="transition duration-700 hover:scale-105    card rounded-sm shadow-2xl shadow-red-800/40 ">
             <figure>
-              <img className="" src={chutti} alt="Shoes" />
+              <img className=" " src={harmic} alt="Shoes" />
             </figure>
-            <div className="card-body -mt-5">
-              <h2 className="card-title ">Chutti </h2>
+            <div className="card-body  -mt-5">
+              <h2 className="card-title ">HARMIC</h2>
               <p>
-                Chutti is website for a online clothing store. Implementing
-                server-side rendering(SSR) for increasing performance and SEO
-                friendly.
+                Harmic is a e-commerce website of different types of fruits and
+                vegatables.Here user can add blog and manage their blog
               </p>
               <div className="card-actions justify-between mt-2 -mb-2">
                 <div className="flex">
-                  <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://chutti-clothing-store.vercel.app/"
+                    href="https://harmic-client.firebaseapp.com/"
                   >
                     Live-link
                   </a>
@@ -143,7 +141,7 @@ const Projects = () => {
                   <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://github.com/tasmim20/clothing-store-client"
+                    href="https://github.com/tasmim20/harmic-client"
                   >
                     Front-End
                   </a>
@@ -152,7 +150,7 @@ const Projects = () => {
                   <BiLinkExternal className="text-darkpink mt-1 " />
                   <a
                     className="no-underline text-darkpink"
-                    href="https://github.com/tasmim20/clothing-store-server"
+                    href="https://github.com/tasmim20/harmic-server"
                   >
                     Back-End
                   </a>
@@ -161,7 +159,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {viewProjects?.length !== 0 &&
+        {/* {viewProjects?.length !== 0 &&
           viewProjects?.map((row) => (
             <div className="transition duration-700 hover:scale-105    card rounded-sm shadow-2xl shadow-red-800/40 ">
               <figure>
@@ -200,7 +198,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
 
         {/* <div className="transition duration-700 hover:scale-105    card rounded-sm shadow-2xl shadow-red-800/40 ">
           <figure>
